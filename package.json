@@ -1,0 +1,51 @@
+{
+  "name": "blocksmc-leaderboard-api",
+  "version": "1.0.0",
+  "description": "API service for blocksmc server Top Join leaderboard data collection and visualization",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker:build": "docker build -t blocksmc-leaderboard-api .",
+    "docker:run": "docker run -p 3000:3000 --env-file .env blocksmc-leaderboard-api"
+  },
+  "keywords": [
+    "minecraft",
+    "api",
+    "leaderboard",
+    "mineflayer",
+    "express",
+    "blocksmc"
+  ],
+  "author": "Tvrki",
+  "license": "ISC",
+  "dependencies": {
+    "canvas": "^3.1.0",
+    "compression": "^1.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "mineflayer": "^4.0.0",
+    "mineflayer-pathfinder": "^2.4.5",
+    "node-cache": "^5.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "nodemon": "^3.1.9"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/9de/blocksmc-leaderboard-api.git"
+  },
+  "nodemonConfig": {
+    "ignore": ["*.test.js", "node_modules/"],
+    "delay": "1500"
+  }
+}
