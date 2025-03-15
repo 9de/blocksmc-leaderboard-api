@@ -81,7 +81,6 @@ Query Parameters:
 - `page`: Page number for pagination. Default: `1`
 - `sortBy`: Field to sort by (`top`, `username`, `time`). Default: `top`
 - `guild`: Filter by guild name. Optional
-- `nocache`: Bypass cache (`true` or `false`). Default: `false`
 
 #### Get Guild Information
 ```
@@ -90,7 +89,6 @@ GET /api/mc/guilds
 
 Query Parameters:
 - `duration`: Leaderboard type (`LIFETIME`, `MONTHLY`, `WEEKLY`). Default: `MONTHLY`
-- `nocache`: Bypass cache (`true` or `false`). Default: `false`
 
 #### Search Players
 ```
